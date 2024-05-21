@@ -1,0 +1,86 @@
+/* Nueva paleta de colores */
+:root {
+    --navy-blue: #1B263B;
+    --slate-gray: #2F4F4F;
+    --charcoal: #36454F;
+    --gunmetal: #2C3539;
+    --steel-blue: #4682B4;
+    --dark-slate-blue: #483D8B;
+}
+
+/* CSS para el Dashboard */
+.publicacion-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.publicacion-card {
+    background-color: var(--charcoal);
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(33.33% - 20px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; /* Alinear contenido en columna */
+}
+
+.publicacion-card h2 {
+    margin-top: 0;
+    font-size: 20px;
+    color: var(--steel-blue);
+    text-align: center; /* Centrar título */
+}
+
+.publicacion-card label {
+    font-weight: bold;
+    color: var(--slate-gray);
+}
+
+.publicacion-card p {
+    margin-top: 5px;
+    font-size: 16px;
+    color: var(--dark-slate-blue);
+}
+
+.publicacion-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-top: 5px;
+}
+
+.publicacion-card .author-info {
+    margin-top: auto; /* Empujar el contenido al fondo */
+    text-align: center; /* Centrar autor */
+}
+
+.comment-section {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--slate-gray); /* Línea divisoria */
+}
+
+.comment-input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid var(--slate-gray);
+    margin-bottom: 10px;
+}
+
+.comment-submit {
+    padding: 8px 20px;
+    background-color: var(--navy-blue);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comment-submit:hover {
+    background-color: var(--dark-slate-blue);
+}

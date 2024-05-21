@@ -1,0 +1,104 @@
+/* Nueva paleta de colores */
+:root {
+    --navy-blue: #1B263B;
+    --slate-gray: #2F4F4F;
+    --charcoal: #36454F;
+    --gunmetal: #2C3539;
+    --steel-blue: #4682B4;
+    --dark-slate-blue: #483D8B;
+}
+
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.publication-details-container {
+    width: 100%; /* Ajustar el ancho al 100% */
+    height: 100vh; /* Ajustar la altura al 100% del viewport */
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    padding: 20px;
+    border: 1px solid var(--navy-blue);
+    border-radius: 10px;
+    background-color: var(--navy-blue); /* Cambio de color de fondo */
+    color: #fff;
+}
+``
+
+
+/* Estilos para los detalles de la publicación */
+.publication-details {
+    margin-top: 20px;
+}
+
+/* Estilos para cada ítem de detalles */
+.publication-details-item {
+    margin-bottom: 10px;
+}
+
+/* Estilos para los labels */
+label {
+    font-weight: bold;
+}
+
+/* Estilos para el link */
+a {
+    color: var(--charcoal);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--slate-gray);
+}
+
+/* Estilos para los comentarios */
+.comment-card {
+    background-color: var(--gunmetal);
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 20px;
+    color: #fff;
+}
+
+/* Estilos para la imagen principal */
+.post-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Estilos para el botón de comentario */
+.comment-button {
+    background-color: var(--navy-blue);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.comment-button:hover {
+    background-color: var(--dark-slate-blue);
+}
+
+/* Estilos para los campos de entrada de comentarios */
+.comment-input {
+    width: calc(100% - 24px); /* Ancho total menos padding */
+    padding: 10px 12px;
+    margin: 10px 0;
+    border: 1px solid var(--charcoal);
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.comment-input:focus {
+    outline: none;
+    border-color: var(--navy-blue);
+}
